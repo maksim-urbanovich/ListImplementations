@@ -33,7 +33,7 @@ public class FlexibleArray<E> implements Cloneable{
     public FlexibleArray(Collection<? extends E> collection) {
         this.elementData = collection.toArray();
         if (elementData.length == 0) {
-
+            elementData = EMPTY_ELEMENTDATA;
         }
     }
 }
